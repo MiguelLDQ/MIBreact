@@ -22,7 +22,7 @@ export default function Shell() {
     <>
       <div id="topbar">
         <button className="btn-icon hamburger" onClick={() => setSidebarOpen((o) => !o)} aria-label="Menu"><Icon name="menu" /></button>
-        <div className="topbar-logo"><Icon name="psychology" /> MIB</div>
+        <div className="topbar-logo"><Icon name="psychology" /> Stella</div>
         <div className="topbar-spacer" />
         <div className="xp-chip" title={`Nível ${level} — ${totalXp} XP`}>
           <span className="lvl-badge">Nv {level}</span>

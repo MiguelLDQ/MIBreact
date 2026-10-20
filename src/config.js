@@ -25,7 +25,7 @@ export const ENUMS = {
 
 export const ROUTES = [
   { id: 'dashboard', label: 'Início', icon: 'home', group: 'Principal' },
-  { id: 'ai', label: 'MIB IA', icon: 'smart_toy', group: 'Principal' },
+  { id: 'ai', label: 'Stella IA', icon: 'smart_toy', group: 'Principal' },
   { id: 'chat', label: 'Chat', icon: 'chat', group: 'Principal' },
   { id: 'friends', label: 'Amigos', icon: 'group', group: 'Principal' },
   { id: 'mood', label: 'Humor', icon: 'mood', group: 'Bem-estar' },

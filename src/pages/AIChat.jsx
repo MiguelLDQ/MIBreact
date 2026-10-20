@@ -36,19 +36,19 @@ export default function AIChat() {
 
   return (
     <>
-      <ViewHeader icon="smart_toy" title="MIB IA">Converse com a IA de apoio emocional do MIB. Ela não substitui acompanhamento profissional.</ViewHeader>
+      <ViewHeader icon="smart_toy" title="Stella IA">Converse com a IA de apoio emocional da Stella. Ela não substitui acompanhamento profissional.</ViewHeader>
       <div className="chat-shell">
         <div className="chat-main" style={{ width: '100%' }}>
           <div className="chat-messages" ref={boxRef}>
             {msgs === null ? <Spin /> : msgs.length === 0
-              ? <Empty icon="smart_toy">Olá! Sou a IA do MIB. Como você está se sentindo hoje?</Empty>
+              ? <Empty icon="smart_toy">Olá! Sou a IA da Stella. Como você está se sentindo hoje?</Empty>
               : msgs.map((m, i) => {
                 const mine = m.role === 'USER' || m.sender === 'USER' || m.fromUser === true;
                 return (
                   <div key={i} className={'msg-row' + (mine ? ' mine' : '')}>
                     <div>
                       <div className="msg-bubble" style={{ whiteSpace: 'pre-wrap' }}>{m.content || m.message || m.text || ''}</div>
-                      <div className="msg-meta">{mine ? 'Você' : 'MIB'} · {fmtTime(m.createdAt || m.timestamp)}</div>
+                      <div className="msg-meta">{mine ? 'Você' : 'Stella'} · {fmtTime(m.createdAt || m.timestamp)}</div>
                     </div>
                   </div>
                 );

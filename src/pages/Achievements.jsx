@@ -7,7 +7,7 @@ export default function Achievements() {
   const res = useAsync(() => api('/achievements'), []);
   return (
     <>
-      <ViewHeader icon="emoji_events" title="Conquistas">Marcos desbloqueados na sua jornada no MIB.</ViewHeader>
+      <ViewHeader icon="emoji_events" title="Conquistas">Marcos desbloqueados na sua jornada na Stella.</ViewHeader>
       <Async res={res}>{(d) => list(d).length ? (
         <div className="grid grid-3">
           {list(d).map((a) => (

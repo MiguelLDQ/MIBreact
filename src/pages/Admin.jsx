@@ -17,7 +17,7 @@ export default function Admin() {
   const Panel = panels[tab];
   return (
     <>
-      <ViewHeader icon="shield_person" title="Painel Admin">Gerencie usuários, conteúdo e configurações do MIB.</ViewHeader>
+      <ViewHeader icon="shield_person" title="Painel Admin">Gerencie usuários, conteúdo e configurações da Stella.</ViewHeader>
       <Tabs value={tab} onChange={setTab} tabs={[
         ['stats', 'Estatísticas'], ['users', 'Usuários'], ['reports', 'Denúncias'], ['moderation', 'Moderação'],
         ['missions', 'Missões'], ['shopadmin', 'Loja'], ['logs', 'Logs'],

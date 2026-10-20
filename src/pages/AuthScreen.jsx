@@ -24,7 +24,7 @@ export default function AuthScreen() {
     <div className="auth-wrap">
       <div className="auth-card">
         <div className="auth-logo">
-          <Icon name="psychology" /><h1>MIB</h1>
+          <Icon name="psychology" /><h1>Stella</h1>
           <span className="tag">evolução do BMO · saúde mental &amp; comunidade</span>
         </div>
         <h2 style={{ textAlign: 'center', marginBottom: 18, fontSize: 18 }}>{isLogin ? 'Bem-vindo de volta' : 'Crie sua conta'}</h2>

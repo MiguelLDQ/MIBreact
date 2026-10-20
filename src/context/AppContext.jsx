@@ -100,7 +100,7 @@ export function AppProvider({ children }) {
       applyTokens(data);
       setUser(normalizeUser(data.user));
       await fetchMe();
-      toast('Conta criada! Bem-vindo ao MIB.', 'success');
+      toast('Conta criada! Bem-vindo à Stella.', 'success');
       setRoute('dashboard');
       return true;
     }

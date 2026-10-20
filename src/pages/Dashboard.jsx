@@ -74,7 +74,7 @@ export default function Dashboard() {
       <div style={{ marginTop: 20 }}>
         <div className="card-title" style={{ marginBottom: 12 }}><Icon name="apps" />Módulos</div>
         <div className="module-grid">
-          {mod('smart_toy', 'MIB IA', 'ai')}{mod('chat', 'Chat', 'chat')}{mod('stars', 'Estrelas Pontilhadas', 'anonymous')}
+          {mod('smart_toy', 'Stella IA', 'ai')}{mod('chat', 'Chat', 'chat')}{mod('stars', 'Estrelas Pontilhadas', 'anonymous')}
           {mod('air', 'Respiração', 'breathing')}{mod('group', 'Amigos', 'friends')}{mod('storefront', 'Loja', 'shop')}
         </div>
       </div>
