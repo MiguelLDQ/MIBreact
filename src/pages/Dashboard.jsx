@@ -1,5 +1,6 @@
 import { MoodPicker } from '../components/mood';
 import { Async, Card, Icon } from '../components/ui';
+import ContentRecommendations from '../components/ContentRecommendations';
 import { useApp } from '../context/AppContext';
 import { useAsync } from '../hooks/useAsync';
 import { api } from '../services/api';
@@ -70,6 +71,10 @@ export default function Dashboard() {
           </>);
         }}</Async>
       </Card>
+
+      <div style={{ marginTop: 16 }}>
+        <ContentRecommendations />
+      </div>
 
       <div style={{ marginTop: 20 }}>
         <div className="card-title" style={{ marginBottom: 12 }}><Icon name="apps" />Módulos</div>
