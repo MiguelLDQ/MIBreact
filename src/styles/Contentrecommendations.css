@@ -1,0 +1,31 @@
+/* Usa variáveis do seu tema quando existirem; senão cai nos valores padrão. */
+.rec { max-width: 720px; margin: 0 auto; padding: 1rem; }
+
+.rec-header {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 1rem; margin-bottom: 1rem;
+}
+.rec-header h2 { margin: 0; font-size: 1.25rem; }
+.rec-header button {
+  padding: 0.5rem 0.9rem; border-radius: 8px; cursor: pointer;
+  border: 1px solid var(--border, #cfd4dc);
+  background: var(--surface, transparent); color: inherit; font: inherit;
+}
+.rec-header button:disabled { opacity: 0.6; cursor: default; }
+.rec-header button:focus-visible,
+.rec-card a:focus-visible { outline: 2px solid var(--accent, #5b6cff); outline-offset: 2px; }
+
+.rec-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.75rem; }
+
+.rec-card a {
+  display: block; padding: 1rem; border-radius: 12px; text-decoration: none; color: inherit;
+  border: 1px solid var(--border, #dfe3ea); background: var(--surface, transparent);
+}
+.rec-card a:hover { border-color: var(--accent, #5b6cff); }
+
+.rec-title { margin: 0 0 0.25rem; font-size: 1rem; }
+.rec-type { font-size: 0.8rem; opacity: 0.7; }
+.rec-desc { margin: 0.5rem 0 0; font-size: 0.9rem; line-height: 1.45; opacity: 0.85; }
+
+.rec-status { opacity: 0.8; }
+.rec-error { color: var(--danger, #c0392b); opacity: 1; }
