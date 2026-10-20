@@ -4,8 +4,8 @@ import {
   refreshRecommendations,
   registerClick,
   registerShown,
-} from "./recommendationsApi";
-import "./ContentRecommendations.css";
+} from "../services/recommendationsApi";
+import "../styles/ContentRecommendations.css";
 
 /**
  * Hook: carrega recomendações, atualiza e registra "visto" em lote.
